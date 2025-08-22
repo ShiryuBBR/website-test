@@ -219,6 +219,25 @@ h1, h2, h3, h4, h5, h6, p {
     box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
 }
 
+/* carousel */
+
+.carousel-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--color-brand-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+}
+
 /* формат */
 
 .format-list {
@@ -267,6 +286,14 @@ h1, h2, h3, h4, h5, h6, p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.address-icon {
+    fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+    fill: var(--color-brand);
 }
 
 .address-link {
