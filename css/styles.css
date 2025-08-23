@@ -19,7 +19,9 @@
     padding: 48px 0;
 }
 
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -196,22 +198,40 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 16px;
 }
 
-.cheffs-title::before {
-    content: '';
-    display: block;
-    width: 352px;
-    border: 2px solid #CFCFBC
+.chef-text p {
+    margin-bottom: 24px;
 }
 
+.chef-text p:last-child {
+    margin-bottom: 0;
+}
+
+.cheffs-title {
+    margin: 0px auto 80px;
+    max-width: 560px;
+}
+
+.cheffs-title::before,
 .cheffs-title::after {
     content: '';
     display: block;
     width: 352px;
     border: 2px solid #CFCFBC
 }
-.cheffs-title {
-    margin: 0px auto 80px;
-    max-width: 560px;
+
+.chefs-list {
+    display: flex;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
+.chefs-item {
+    flex-basis: calc((100% - 30px) / 2);
 }
 
 .chef-img {
@@ -231,6 +251,7 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .carousel-button:hover {
@@ -239,6 +260,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* формат */
+
+.fotmat-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
 
 .format-list {
     display: flex;
@@ -274,11 +301,57 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* contact */
 
+.contact-section {
+    padding-bottom: 96px;
+}
+
 .contact-title {
     margin-bottom: 16px;
 }
 
+.contact-container {
+    display: flex;
+    gap: 32px;
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+}
+
 /* footer */
+
+.footer-container {
+    gap: 20px;
+    display: flex;
+}
+
+.footer-nav {
+    gap: 20px;
+    display: flex;
+    flex-basis: 50%;
+}
+
+.footer-address {
+    gap: 20px;
+    display: flex;
+    flex-basis: 50%;
+}
+
+.a {
+    display: inline-block;
+}
+
+.footer-logo,
+.footer-list {
+    flex-basis: 50%;
+}
+
+.footer-link,
+.address-info {
+    flex-basis: 50%;
+}
 
 .footer{
     background-image: url(../image/footer.png);
@@ -286,6 +359,7 @@ h1, h2, h3, h4, h5, h6, p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 32px 0;
 }
 
 .address-icon {
