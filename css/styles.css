@@ -11,7 +11,7 @@
 
 .container {
     width: 100%;
-    max-width: 1288px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 
@@ -27,7 +27,7 @@
 
 body {
     color: var(--color-primary-dark);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
@@ -207,14 +207,23 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .cheffs-title {
+    position: relative;
     margin: 0px auto 80px;
-    max-width: 560px;
+}
+
+.cheffs-title::before {
+    right: 0px;
+}
+
+.cheffs-title::after {
+    left: 0;
 }
 
 .cheffs-title::before,
 .cheffs-title::after {
+    position: absolute;
+    bottom: 24px;
     content: '';
-    display: block;
     width: 352px;
     border: 2px solid #CFCFBC
 }
@@ -360,7 +369,32 @@ h1, h2, h3, h4, h5, h6, p {
     background-position: center;
     background-repeat: no-repeat;
     padding: 32px 0;
+    position: relative;
 }
+
+.footer::before {
+    background-image: url('../image/breadwheat.png');
+    width: 180px;
+    height: 120px;
+}
+
+.footer::after {
+
+    background-image: url('../image/Breadbig.png');
+    width: 380px;
+    height: 190px;
+    right: 0;
+}
+
+.footer::before,
+.footer::after {
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: '';
+}
+
+/* adress */
 
 .address-icon {
     fill: var(--color-primary-light);
@@ -392,4 +426,38 @@ h1, h2, h3, h4, h5, h6, p {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+
+/* modal */
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: relative;
+    width: 880px;
+    height: 880px;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
 }
