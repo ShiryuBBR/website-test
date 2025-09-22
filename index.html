@@ -320,7 +320,7 @@
         <button class="modal-btn-close" type="button">Close</button>
         <h2 class="modal-title">Замовити дзвінок</h2>
         <p>Залишіть заявку і спціаліст зв'яжиться з вами</p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label hiden" for="user-name"
               >введіть ім'я
@@ -331,6 +331,7 @@
               name="user-name"
               id="user-name"
               placeholder="Ім'я"
+              required
             />
           </div>
           <div class="form-field">
@@ -341,6 +342,7 @@
               name="user-tel"
               id="user-tel"
               placeholder="Телефон"
+              required
             />
           </div>
           <div class="form-field">
@@ -353,11 +355,23 @@
               name="user-email"
               id="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
           <button class="button form-button" type="submit">
             Замовити дзвінок
           </button>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              class="checkbox-input hiden"
+              id="terms-conditions"
+              name="terms-conditions"
+            />
+            <label class="checkbox-label" for="terms-conditions">
+              Я точно погоджуюсь з політикою конфіденційності
+            </label>
+          </div>
           <p class="form-terms">
             Натискачи на кнопку я погоджусь з
             <a class="form-terms-link" href="#">політикою конфіденційності</a>

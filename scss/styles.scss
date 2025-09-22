@@ -1,0 +1,69 @@
+
+@import './utils/variables';
+
+@import './base'; 
+
+@import './utils/fonts';
+
+@import './utils/utils';
+
+@import './components/buttons';
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+@import './components/section';
+
+@import './components/links';
+
+@import './components/hero-section';
+
+/* Хедер */
+
+@import './components/header';
+
+/* преймущества */
+
+@import './components/advantages';
+
+/* традиции */
+
+@import './components/traditions';
+
+/* шефф */
+
+@import './components/cook';
+
+/* carousel */
+
+@import './components/carousel';
+
+/* формат */
+
+@import './components/format';
+
+/* contact */
+
+@import './components/contact';
+
+/* footer */
+
+@import './components/footer';
+
+/* adress */
+
+@import './components/address';
+
+
+/* modal */
+
+@import './components/modal-backdrop';
+
+/* form */
+
+@import './components/form';
+
+@import './components/checkbox';
