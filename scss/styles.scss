@@ -1,64 +1,31 @@
 
 @import './utils/variables';
-
 @import './base'; 
 
 @import './utils/fonts';
-
 @import './utils/utils';
+@import './utils/texts';
 
 @import './components/buttons';
-
-
-@import './components/section';
-
-@import './components/links';
-
-@import './components/hero-section';
-
-/* Хедер */
-
-@import './components/header';
-
-/* преймущества */
-
-@import './components/advantages';
-
-/* традиции */
-
-@import './components/traditions';
-
-/* шефф */
-
-@import './components/cook';
-
-/* carousel */
-
-@import './components/carousel';
-
-/* формат */
-
-@import './components/format';
-
-/* contact */
-
-@import './components/contact';
-
-/* footer */
-
-@import './components/footer';
-
-/* adress */
-
-@import './components/address';
-
-
-/* modal */
-
-@import './components/modal-backdrop';
-
-/* form */
-
-@import './components/form';
-
 @import './components/checkbox';
+@import './components/links';
+@import './components/format-card';
+@import './components/form-terms';
+@import './components/input';
+@import './components/chef-card';
+
+@import './layouts/hero-section';
+@import './layouts/section';
+@import './layouts/header';
+@import './layouts/advantages';
+@import './layouts/traditions';
+@import './layouts/cheffs';
+@import './layouts/carousel';
+@import './layouts/format';
+@import './layouts/contact';
+@import './layouts/footer';
+@import './layouts/address';
+@import './layouts/modal';
+@import './layouts/backdrop';
+
+

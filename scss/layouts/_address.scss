@@ -1,0 +1,32 @@
+.address {
+    gap: 20px;
+    display: flex;
+    flex-basis: 50%;
+
+    &__icon {
+        fill: var(--color-primary-light);
+    }
+
+    &__icon:hover {
+        fill: var(--color-brand);
+    }
+
+    &__link {
+        color: var(--color-primary-light);
+        font-size: 16px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        color: var(--color-brand);
+    }
+
+    &__copyright {
+        font-size: 14px;
+    }
+
+    &__list {
+        flex-basis: 50%;
+    }
+}
