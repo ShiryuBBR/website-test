@@ -1,7 +1,12 @@
 .address {
     gap: 20px;
     display: flex;
-    flex-basis: 50%;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+        flex-direction: row;
+        flex-basis: 50%;
+    }
 
     &__icon {
         fill: var(--color-primary-light);
@@ -28,5 +33,13 @@
 
     &__list {
         flex-basis: 50%;
+        margin-bottom: 10px;
+
+        & li {
+            margin-bottom: 10px;
+            @media screen and (min-width: $bp-tablet) {
+                margin-bottom: 0;
+            }
+        }
     }
 }

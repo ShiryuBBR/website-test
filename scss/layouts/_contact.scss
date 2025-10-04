@@ -1,5 +1,8 @@
 .contact-section {
-    padding-bottom: 96px;
+    padding-bottom: 0px;
+    @media screen and (min-width: $bp-tablet) {
+        padding-bottom: 96px;
+    }
 
     &__title {
         margin-bottom: 16px;
@@ -7,7 +10,13 @@
 
     &__container {
         display: flex;
-        gap: 32px;
+        gap: 24px;
+        flex-direction: column;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            gap: 32px;
+        }
     }
 
     &__form-field {
@@ -18,6 +27,18 @@
         flex-shrink: 0;
         border: none;
         border-radius: 16px;
+        height: 176px;
+        margin: 0 -24px;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin: auto;
+            width: 280px;
+            height: 500px;
+        }
+        @media screen and (min-width: $bp-desktop) {
+            width: 600px;
+            height: 595px;
+        }
     }
 
     &__button {

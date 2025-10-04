@@ -4,15 +4,27 @@
     height: 100%;
     max-width: 880px;
     max-height: 880px;
-    padding: 128px;
+    padding: 48px;
     background-color: var(--color-primary-light);
     border-radius: 32px;
     overflow-y: auto;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 128px;
+    }
 
     &__btn-close {
         position: absolute;
         top: 40px;
         right: 40px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__btn-close svg {
+        stroke: black;
+        transition: fill 0.2s;
     }
 
     &__title {

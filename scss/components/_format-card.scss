@@ -8,7 +8,6 @@
     border-radius: 16px;
     height: 444px;
     background-image: linear-gradient(180deg, rgba(49, 38, 26, 0)55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
-    transition: transform 0.3s;
 
     &__img {
         position: absolute;
@@ -29,10 +28,6 @@
         font-size: 14px;
         font-weight: 300;
         color: var(--color-primary-light);
-    }
-
-    &:hover {
-        transform: scale(1.05);
     }
 
     & p {
