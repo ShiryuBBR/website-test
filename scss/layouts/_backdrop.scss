@@ -10,6 +10,7 @@
     align-items: center;
     padding: 20px;
     transition: opacity .3s, visibility .3s;
+    z-index: 1;
 
     &.is-hidden {
         opacity: 0;

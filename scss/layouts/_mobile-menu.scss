@@ -7,6 +7,8 @@
     background-color: var(--color-primary-light);
     transform: translateX(100%);
     transition: transform 0.3s;
+    z-index: 2;
+    padding: 16px 24px;
     
     &.is-open {
         transform: translateX(0);
@@ -16,5 +18,39 @@
         position: absolute;
         top: 16px;
         right: 24px;
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    &__list {
+        margin-top: 32px;
+    }
+
+    &__item {
+        margin-bottom: 16px;
+    }
+
+    &__item-link {
+        color: var(--color-primary-dark);
+        font-weight: 400;
+        text-decoration: none;
+        transition: color, 0.3s;
+    }
+
+    &__item-link:hover {
+        color: var(--color-brand);
+    }
+
+    &::after {
+        background-image: url('../image/mobile-bread.png');
+        width: 180px;
+        height: 240px;
+        position: absolute;
+        background-repeat: no-repeat;
+        bottom: 0;
+        right: 0;
+        content: '';
     }
 }
