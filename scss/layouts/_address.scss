@@ -10,6 +10,7 @@
 
     &__icon {
         fill: var(--color-primary-light);
+        margin-right: 10px;
     }
 
     &__icon:hover {
@@ -29,6 +30,7 @@
 
     &__copyright {
         font-size: 14px;
+        color: var(--color-secondary-dark);
     }
 
     &__list {
@@ -40,6 +42,15 @@
             @media screen and (min-width: $bp-tablet) {
                 margin-bottom: 0;
             }
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        @media screen and (min-width: $bp-tablet) {
+            justify-content: left;
         }
     }
 }
